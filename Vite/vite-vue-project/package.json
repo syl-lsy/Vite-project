@@ -1,0 +1,38 @@
+{
+  "name": "vite",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "files": [],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syl-lsy/Vite-project.git"
+  },
+  "scripts": {
+    "dev": "vite --mode development",
+    "prebuild": "vite tsc",
+    "build": "vite build -w --mode production",
+    "test": "vite build --mode test",
+    "preview": "vite preview",
+    "optimize": "vite optimize"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.30.2",
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.2.5"
+  },
+  "dependencies": {
+    "@types/node": "^25.3.3",
+    "lodash-es": "^4.17.23",
+    "vue": "^3.5.29"
+  }
+}

@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #0056b3;
+}
+
+:root {
+  --color-secondary: #0056b3;
+}
+
+:root {
+  --color-success: #28a745;
+}
+
+:root {
+  --color-info: #17a2b8;
+}
+
+:root {
+  --color-warning: #ffc107;
+}
+
+:root {
+  --color-danger: #dc3545;
+}
+
+:root {
+  --color-light: #f8f9fa;
+}
+
+:root {
+  --color-dark: #343a40;
+}
