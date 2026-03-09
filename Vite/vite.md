@@ -149,3 +149,17 @@ export default defineConfig({
 import.meta.env这个命令只对VITE开头的变量可以获取
 
 ### CLI Command Line Interface 命令行接口
+
+
+### 在使用css module模块时，需要在tsconfig.json文件中配置
+```js
+{
+  "compilerOptions": {
+    "types":["vite/client"]
+  }
+},
+// 在vite-env.config.ts文件中配置
+/// <reference types="vite/client" />
+// 而且在需要的文件中引入时是ESModule形式引入
+import styles from './index.module.scss'
+```

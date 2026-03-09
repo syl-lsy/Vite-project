@@ -12,6 +12,12 @@ importers:
         specifier: ^25.3.3
         version: 25.3.3
     devDependencies:
+      '@types/json-stringify-safe':
+        specifier: ^5.0.3
+        version: 5.0.3
+      json-stringify-safe:
+        specifier: ^5.0.1
+        version: 5.0.1
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -318,6 +324,9 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
+  '@types/json-stringify-safe@5.0.3':
+    resolution: {integrity: sha512-oNOjRxLfPeYbBSQ60maucaFNqbslVOPU4WWs5t/sHvAh6tyo/CThXSG+E24tEzkgh/fzvxyDrYdOJufgeNy1sQ==}
+
   '@types/node@25.3.3':
     resolution: {integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==}
 
@@ -339,6 +348,9 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  json-stringify-safe@5.0.1:
+    resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
 
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
@@ -574,6 +586,8 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
+  '@types/json-stringify-safe@5.0.3': {}
+
   '@types/node@25.3.3':
     dependencies:
       undici-types: 7.18.2
@@ -613,6 +627,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  json-stringify-safe@5.0.1: {}
 
   nanoid@3.3.11: {}
 

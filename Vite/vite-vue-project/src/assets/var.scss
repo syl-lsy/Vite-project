@@ -1,0 +1,18 @@
+$colors: (
+    "primary": #007bff,
+    "warning": #ff9900,
+    "success": #00ff00,
+    "info": #00ffff,
+    "danger": #ff0000
+);
+@each $color, $value in $colors {
+    :root {
+        --color-#{$color}: #{$value};
+    }
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+

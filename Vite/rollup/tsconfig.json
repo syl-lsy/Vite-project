@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "esnext",
+        // "strict": true,
+        "esModuleInterop": true,
+        "allowImportingTsExtensions": true,
+        "declaration": true,
+        "declarationDir": "./dist/types",
+        "noEmit": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "bundler",
+        "isolatedModules": true,
+    },
+    "include": [
+        "src/**/*.ts",
+        "rollup.config.ts"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

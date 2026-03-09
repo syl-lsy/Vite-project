@@ -12,7 +12,7 @@ const config = (config: ConfigEnv): UserConfig => {
   return {
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, 'src'),
+        '@': path.resolve(__dirname, './src'),
       },
       extensions: ['.js', '.ts', '.tsx', '.jsx'],
     },

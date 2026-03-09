@@ -13,8 +13,7 @@
   },
   "scripts": {
     "dev": "vite --mode development",
-    "prebuild": "vite tsc",
-    "build": "vite build -w --mode production",
+    "build": "vue-tsc && vite build -w --mode production",
     "test": "vite build --mode test",
     "preview": "vite preview",
     "optimize": "vite optimize"
@@ -23,9 +22,24 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.30.2",
+  "browserslist": {
+    "production": [
+      ">1%",
+      "last 2 versions",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
     "@vitejs/plugin-vue": "^6.0.4",
+    "postcss-preset-env": "^11.2.0",
+    "rollup-plugin-external-globals": "^0.13.0",
+    "rollup-plugin-visualizer": "^7.0.1",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vue-tsc": "^3.2.5"
@@ -33,6 +47,7 @@
   "dependencies": {
     "@types/node": "^25.3.3",
     "lodash-es": "^4.17.23",
+    "sass": "^1.97.3",
     "vue": "^3.5.29"
   }
 }

@@ -8,7 +8,13 @@
         "allowImportingTsExtensions": true,
         "moduleResolution": "bundler",
         "esModuleInterop": true, // 允许导入CommonJS模块
-        "jsx": "preserve"
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
     },
     "include": [
         "src/**/*.ts",

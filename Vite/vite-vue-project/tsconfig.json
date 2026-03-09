@@ -1,23 +1,36 @@
 {
     "compilerOptions": {
-        "target": "es2020",
+        "target": "es2015",
         "module": "esnext",
         "strict": true,
         "isolatedModules": false,
         "noEmit": true,
         "allowImportingTsExtensions": true,
-        "moduleResolution": "bundler",
-        "esModuleInterop": true // 允许导入CommonJS模块
+        "moduleResolution": "Bundler",
+        "esModuleInterop": true, // 允许导入CommonJS模块,
+        "useDefineForClassFields": true, // 启用ES2022的类字段定义
+        "skipLibCheck": true, // 跳过node_modules的类型检查
+        "types": [
+            "vite/client",
+            "vue",
+            "node"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
     },
     "include": [
         "src/**/*.ts",
         "src/**/*.d.ts",
         "src/**/*.tsx",
         "src/**/*.vue",
-        "src/vite-env.d.ts"
+        "App.vue",
+        "vite.config.ts"
     ],
     "exclude": [
-        "node_modules",
         "dist"
     ]
 }
